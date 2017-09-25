@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="HelloWorldServlet" basedir="." default="war">
+
+  <property file="build.properties" />
+
+	<!-- The Class-Path for the build is defined here-->
+	<path id="cp">
+	  	<fileset dir="${lib.dir}" includes="*.jar"/>
+		
+	 </path>
+
+	<!-- The Class-Path for the JUnit Test is defined here.This also includes the compiled classes directory-->
+	<path id="jUnit.cp">
+		    <path refid="cp"/>
+			<pathelement location="${bin.dir}" />
+		</path>
+
+	<!-- Clean the classes, dist & report folder  -->
+	<target name="clean">
+		  <delete dir="${bin.dir}" />
+		  <delete dir="${temp.dir}" />
+		 
+	</target>
+
+	<!-- Create the bin,dist & report folders for fresh build -->
+	<target name="init" depends="clean">
+		  <mkdir dir="${bin.dir}" />
+		  <mkdir dir="${temp.dir}" />
+	</target>
+
+	<!-- Compilation of Java Src Files into WEB-INF/classes -->
+	<target name="compile" depends="init">
+					<javac destdir="${bin.dir}" debug="true" srcdir="${src.dir}">
+						<classpath refid="cp"/>
+					</javac>
+						<copy todir="${bin.dir}">
+						    		<fileset dir="${src.dir}">
+						    			<include name="**/*.properties" />
+						    			<include name="**/*.xml" />
+						    		</fileset>
+
+						 </copy>
+	</target>
+
+	<!-- Package the build into a WAR File after compilation & testing tasks are completed.-->
+	<target name="war" depends="compile">
+		<war destfile="${temp.dir}/HelloWorldServlet.war" webxml="WebContent/WEB-INF/web.xml">
+		 <fileset dir="WebContent" >
+		 	    <include name="*/*.xml" />
+		 	    <include name="**/*.jar" />
+		 	    <include name="**/*.properties" />
+		 	</fileset>
+		 	<lib dir="./WebContent/WEB-INF/lib">
+		 	</lib>
+		 	<classes dir="./build/classes" />	
+		 </war>
+	</target>
+	
+	<!-- Copying the WAR File to the deployment folder -->
+	
+	<!-- 	This task is Used to Unit-Test the Compiled Java Files -->
+		
+
+	
+</project>
