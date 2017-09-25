@@ -135,7 +135,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 		service = Executors.newScheduledThreadPool(num_threads);
 		AsyncWebService srvc = new AsyncWebService();
-		service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.SECONDS);
+		service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.MILLISECONDS);
 
 	}
 
