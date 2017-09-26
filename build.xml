@@ -54,7 +54,7 @@
 			<zipfileset dir="." includes="src/**" prefix="WEB-INF"/>
 		 	<lib dir="./WebContent/WEB-INF/lib">
 		 	</lib>
-		 	<classes dir="./build/classes" />	
+		        <classes dir="./WebContent/WEB-INF/classes" />	
 		 </war>
 	</target>
 	
