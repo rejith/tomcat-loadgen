@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<project name="HelloWorldServlet" basedir="." default="war">
+<project name="tomcat-loadgen" basedir="." default="war">
 
   <property file="build.properties" />
 
@@ -45,7 +45,7 @@
 
 	<!-- Package the build into a WAR File after compilation & testing tasks are completed.-->
 	<target name="war" depends="compile">
-		<war destfile="${temp.dir}/HelloWorldServlet.war" webxml="WebContent/WEB-INF/web.xml">
+		<war destfile="${temp.dir}/tomcat-loadgen.war" webxml="WebContent/WEB-INF/web.xml">
 		 <fileset dir="WebContent" >
 		 	    <include name="*/*.xml" />
 		 	    <include name="**/*.jar" />
