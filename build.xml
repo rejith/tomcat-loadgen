@@ -36,7 +36,7 @@
 					</javac>
 						<copy todir="${bin.dir}">
 						    		<fileset dir="${src.dir}">
-						    			
+						    			<include name="**/*.properties" />
 						    			<include name="**/*.xml" />
 						    		</fileset>
 
@@ -49,7 +49,7 @@
 		 <fileset dir="WebContent" >
 		 	    <include name="*/*.xml" />
 		 	    <include name="**/*.jar" />
-		 	    
+		 	    <include name="**/*.properties" />
 		 	</fileset>
 			<zipfileset dir="." includes="src/**" prefix="WEB-INF"/>
 		 	<lib dir="./WebContent/WEB-INF/lib">
