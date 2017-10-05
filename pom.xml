@@ -3,7 +3,7 @@
   <groupId>com.tomcat-lodgen</groupId>
   <artifactId>tomcat-lodgen</artifactId>
   <packaging>war</packaging>
-  <version>1.0</version>
+  <version></version>
   <dependencies>
     <dependency>
         <groupId>javax.servlet</groupId>
