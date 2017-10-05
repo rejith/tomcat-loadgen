@@ -60,7 +60,7 @@
        <plugin>
       <groupId>com.tomcat-loadgen</groupId>
       <artifactId>docker-maven-plugin</artifactId>
-         <version>1.0</version>
+         <version>0.4.5</version>
         <configuration>
         <imageName>tomcat-loadgen-mvn</imageName>
         <dockerDirectory>docker</dockerDirectory>
