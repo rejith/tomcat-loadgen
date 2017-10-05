@@ -3,7 +3,7 @@
   <groupId>com.tomcat-lodgen</groupId>
   <artifactId>mvn</artifactId>
   <packaging>war</packaging>
-  
+  <version>1.0</version>
   <dependencies>
     <dependency>
         <groupId>javax.servlet</groupId>
@@ -60,6 +60,7 @@
        <plugin>
       <groupId>com.tomcat-loadgen</groupId>
       <artifactId>docker-maven-plugin</artifactId>
+         <version>1.0</version>
         <configuration>
         <imageName>tomcat-loadgen-mvn</imageName>
         <dockerDirectory>docker</dockerDirectory>
