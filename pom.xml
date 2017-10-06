@@ -60,12 +60,12 @@
 			</plugin>
 
 			<plugin>
-				<groupId>com.tomcat-loadgen</groupId>
+				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.4.5</version>
+				<version>0.4.11</version>
 				<configuration>
 					<imageName>tomcat-lodgen</imageName>
-					<dockerDirectory>docker</dockerDirectory>
+					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
