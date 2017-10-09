@@ -1,0 +1,8 @@
+FROM tomcat:7-jre8
+MAINTAINER xyz
+
+RUN ["rm", "-fr", "/usr/local/tomcat/webapps/tomcat-loadgen"]
+COPY ./target/tomcat-lodgen.war /usr/local/tomcat/webapps/tomcat-loadgen.war
+
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
