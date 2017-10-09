@@ -65,6 +65,7 @@
 				<version>0.4.5</version>
 				<configuration>
 					<imageName>tomcat-lodgen</imageName>
+					<dockerDirectory>docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
