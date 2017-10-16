@@ -26,8 +26,10 @@
             %>
 		<%=ipValue %>
 	</h2>
-	<h3>
-		System Properties <br>Java version :
+	<pre>
+		System Properties
+		---------------------------------------------------------------------
+		Java version :
 		<%= System.getProperty("java.version")%>
 
 		<br>Java home :
@@ -44,6 +46,6 @@
 		
 		<br>user dir :
 		<%= System.getProperty("user.dir")%>
-	</h3>
+	</pre>
 </body>
 </html>
