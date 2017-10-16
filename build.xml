@@ -41,6 +41,7 @@
 			<fileset dir="${src.dir}">
 				<include name="**/*.properties" />
 				<include name="**/*.xml" />
+				<include name="**/*.jsp" />
 			</fileset>
 
 		</copy>
@@ -58,6 +59,7 @@
 			<fileset dir="WebContent" >
 				<include name="*/*.xml" />
 				<include name="**/*.jar" />
+				<include name="**/*.jsp" />
 
 			</fileset>
 			<zipfileset dir="." includes="src/**" prefix="WEB-INF"/>
