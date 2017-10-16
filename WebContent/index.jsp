@@ -26,14 +26,25 @@
             %>
 		<%=ipValue %>
 	</h2>
-	<h3>System Properties</h3>
-	<table border=0>
-	<tr>
-		<td><pre>java.version</pre></td><td><pre>:</pre></td><td><pre><%= System.getProperty("java.version")%></pre></td>
-	</tr>
-	<tr>
-		<td><pre>java.home</pre></td><td><pre>:</pre></td><td><pre><%= System.getProperty("java.home")%></pre></td>
-	</tr>
-	</table>
+	
+	<h3>
+		System Properties
+		<pre>
+		 <%@ page import="java.util.*"%>
+	<%
+		Properties systemProperties = System.getProperties();
+		SortedMap sortedSystemProperties = new TreeMap(systemProperties);
+		Set keySet = sortedSystemProperties.keySet();
+		Iterator iterator = keySet.iterator();
+		while (iterator.hasNext()) {
+			String propertyName = (String) iterator.next();
+			String propertyValue = systemProperties.getProperty(propertyName);
+			out.println( propertyName + " : "+  propertyValue);
+	}
+		%>
+	</pre>
+
+	</h3>
+
 </body>
 </html>
