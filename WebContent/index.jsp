@@ -26,26 +26,12 @@
             %>
 		<%=ipValue %>
 	</h2>
-	<pre>
-		System Properties
-		---------------------------------------------------------------------
-		Java version :
-		<%= System.getProperty("java.version")%>
-
-		<br>Java home :
-		<%= System.getProperty("java.home")%>
-
-		<br>user name :
-		<%= System.getProperty("user.name")%>
-
-		<br>OS name :
-		<%= System.getProperty("os.name")%>
-		
-		<br>OS Arch :
-		<%= System.getProperty("os.arch")%>
-		
-		<br>user dir :
-		<%= System.getProperty("user.dir")%>
-	</pre>
+<pre>
+System Properties
+---------------------------------------------------------------------
+java.version : <%= System.getProperty("java.version")%>
+java.home : <%= System.getProperty("java.home")%>
+</pre>
+	
 </body>
 </html>
