@@ -26,12 +26,14 @@
             %>
 		<%=ipValue %>
 	</h2>
-<pre>
-System Properties
----------------------------------------------------------------------
-java.version : <%= System.getProperty("java.version")%>
-java.home : <%= System.getProperty("java.home")%>
-</pre>
-	
+	<h3>System Properties</h3>
+	<table border=0>
+	<tr>
+		<td><pre>java.version</pre></td><td><pre>:</pre></td><td><pre><%= System.getProperty("java.version")%></pre></td>
+	</tr>
+	<tr>
+		<td><pre>java.home</pre></td><td><pre>:</pre></td><td><pre><%= System.getProperty("java.home")%></pre></td>
+	</tr>
+	</table>
 </body>
 </html>
