@@ -17,6 +17,6 @@ deploy:
 
 properties:
   title: Tomcat Loadgen 
-  thread: 4
+  threads: 4
   interval: 180
   
