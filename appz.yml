@@ -19,4 +19,5 @@ properties:
   title: Tomcat Loadgen 
   threads: 4
   interval: 180
+  nano : 31
   
