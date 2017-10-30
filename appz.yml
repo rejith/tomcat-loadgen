@@ -12,7 +12,7 @@ build:
 
 deploy:
   context: myco/DEV
-  replicas: 2
+  replicas: 3
   port: 8080
 
 properties:
