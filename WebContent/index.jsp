@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Tomcat-loadgen Application 0.3a</title>
+<title>Tomcat-loadgen Application</title>
 </head>
 <body>
-	<h1>Welcome to Tomcat LoadGen Application</h1>
+	<h1>Welcome to Tomcat LoadGen Application 0.3a</h1>
 	<h2>
 		IP Address  : 
 
