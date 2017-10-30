@@ -7,7 +7,7 @@
 <title>Tomcat-loadgen Application</title>
 </head>
 <body>
-	<h1>Welcome to Tomcat LoadGen Application 0.3a</h1>
+	<h1>Welcome to Tomcat LoadGen Application 0.3b</h1>
 	<h2>
 		IP Address  : 
 
