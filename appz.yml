@@ -1,19 +1,19 @@
 app:
   name: Tomcat Loadgen
-	code: TCLG
+  code: TCLG
 
 build:
   version: 0.3
-	env: DEV
-	build_file: build.xml
-	output_files: output/*.war
-	image_template: tomcat8
-	image_name: myco/tomcat-loadgen
+  env: DEV
+  build_file: build.xml
+  output_files: output/*.war
+  image_template: tomcat8
+  image_name: myco/tomcat-loadgen
 
 deploy:
-	context: myco/DEV
-	replicas: 2
-	port: 8080
+  context: myco/DEV
+  replicas: 2
+  port: 8080
 
 properties:
   title: Tomcat Loadgen 
