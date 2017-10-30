@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Tomcat-loadgen Application</title>
+<title>Tomcat-loadgen Application 0.3a</title>
 </head>
 <body>
 	<h1>Welcome to Tomcat LoadGen Application</h1>
