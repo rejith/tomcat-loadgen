@@ -113,7 +113,7 @@ public class HelloWorldServlet extends HttpServlet {
 				props.load(resourceStream);
 				//System.out.println(props.getProperty("NUM_THREADS"));
 				num_threads = Integer
-						.parseInt(props.getProperty("NUM_THREADS"));
+						.parseInt(props.getProperty("threads"));
 				delay = Integer.parseInt(props.getProperty("delay"));
 				next = Integer.parseInt(props.getProperty("next"));
 				urlPath = props.getProperty("url");
@@ -133,10 +133,11 @@ public class HelloWorldServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 
-		service = Executors.newScheduledThreadPool(num_threads);
-		AsyncWebService srvc = new AsyncWebService();
-		service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.SECONDS);
-
+		if (num_threads > 0) {
+			service = Executors.newScheduledThreadPool(num_threads);
+			AsyncWebService srvc = new AsyncWebService();
+			service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.SECONDS);
+		}
 	}
 
 	public class AsyncWebService implements Runnable {
