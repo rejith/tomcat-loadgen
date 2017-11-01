@@ -18,6 +18,7 @@ deploy:
 properties:
   title: Tomcat Loadgen 
   threads: 4
-  interval: 180
+  delay: 15
+  next: 10
   nano : 31
   
