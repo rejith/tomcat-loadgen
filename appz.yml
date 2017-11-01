@@ -20,5 +20,6 @@ properties:
   threads: 4
   delay: 15
   next: 10
+  download: true
   nano : 31
   
