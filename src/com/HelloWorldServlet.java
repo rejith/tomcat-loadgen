@@ -103,6 +103,7 @@ public class HelloWorldServlet extends HttpServlet {
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		Properties props = new Properties();
 		int num_threads = 0, next = 0, delay = 0;
+		boolean download= true;
 		lock = new ReentrantLock();
 		try {
 			
@@ -112,12 +113,24 @@ public class HelloWorldServlet extends HttpServlet {
 			if (resourceStream != null) {
 				props.load(resourceStream);
 				//System.out.println(props.getProperty("NUM_THREADS"));
-				num_threads = Integer
-						.parseInt(props.getProperty("threads"));
-				delay = Integer.parseInt(props.getProperty("delay"));
-				next = Integer.parseInt(props.getProperty("next"));
-				urlPath = props.getProperty("url");
-				source = props.getProperty("source_path");
+				num_threads = Integer.parseInt(System.getProperty("threads"));
+				
+				delay = Integer.parseInt(System.getProperty("delay"));
+				next = Integer.parseInt(System.getProperty("next"));
+				download = Boolean.parseBoolean(System.getProperty("download"));
+				
+				if ( download == true )
+				{
+				    urlPath = props.getProperty("url");
+				    source = props.getProperty("source_path");
+				}
+				else
+				{
+					ClassLoader classLoader = getClass().getClassLoader();
+				    String path  = classLoader.getResource("resources/Python35_x64.zip").getPath();
+					source=path;
+				}
+				
 				destination = props.getProperty("dest_path");
 				temp_path = props.getProperty("temp_path");
 			} else {
@@ -178,17 +191,22 @@ public class HelloWorldServlet extends HttpServlet {
 
 	private void extract() {
 		try {
+			System.out.println("source file path"+source);
+			boolean download = Boolean.parseBoolean(System.getProperty("download"));
+			if( download== true)
+			{
 			
-			URL url = new URL(urlPath);
+				URL url = new URL(urlPath);
 			
-			File destination_path = new File(source);
-			System.out.println(source);
+				File destination_path = new File(source);
+				System.out.println(source);
 
 			
-			Thread.sleep(50);
-			FileUtils.copyURLToFile(url, destination_path);
+				Thread.sleep(50);
+				FileUtils.copyURLToFile(url, destination_path);
 			// lock.unlock();
-			System.out.println("Download completed");
+				System.out.println("Download completed");
+			}
 			
 			System.out.println("Extraction started");
 
