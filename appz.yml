@@ -22,4 +22,3 @@ properties:
   next: 10
   download: true
   nano : 39
-  JAVA_OPTS: -Xms1024m -DH=Y
