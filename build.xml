@@ -42,6 +42,7 @@
 				<include name="**/*.properties" />
 				<include name="**/*.xml" />
 				<include name="**/*.jsp" />
+				<include name="**/*.zip" />
 			</fileset>
 
 		</copy>
@@ -49,6 +50,7 @@
 
 			<fileset dir="${resources.dir}">
 				<include name="**/*.properties" />
+				<include name="**/*.zip" />
 			</fileset>
 		</copy>
 	</target>
