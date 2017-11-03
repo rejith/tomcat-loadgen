@@ -17,7 +17,7 @@ deploy:
 
 properties:
   title: Tomcat Loadgen 
-  threads: 4
+  threads: 0
   delay: 15
   next: 10
   download: true
