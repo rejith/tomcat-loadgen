@@ -166,12 +166,20 @@ public class HelloWorldServlet extends HttpServlet {
 			System.out.print("Thread # " + threadId + " is doing this task");
 
 			extract();
+			boolean download = Boolean.parseBoolean(System.getProperty("download"));
+			String dest="";
+			if (download==true)
+			   dest = temp_path;
+			else
+			{
+				dest=destination+"/Python35_x64";
+				System.out.println("Destination directory"+dest);
+			}
 			
-			String dest = temp_path;
 
 			try {
 
-				Thread.sleep(50);
+				//Thread.sleep(50);
 				// lock.lock() ;
 				FileUtils.deleteDirectory(new File(dest));
 				// lock.unlock();
@@ -186,7 +194,9 @@ public class HelloWorldServlet extends HttpServlet {
 			catch (Exception e) {
 				//e.printStackTrace();
 			}
+		
 		}
+
 	}
 
 	private void extract() {
