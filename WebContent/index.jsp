@@ -25,14 +25,11 @@
             }
             %>
 		<%=ipValue %>
-	</h2>
-	
-	<h3>
-		System Properties
+	</h2>		
 		</br>
-		<pre>
-		 <%@ page import="java.util.*"%>
-	<%
+<pre>System Properties
+---------------------------
+<%@ page import="java.util.*"%><%
 		Properties systemProperties = System.getProperties();
 		out.println();
 		SortedMap sortedSystemProperties = new TreeMap(systemProperties);
@@ -42,11 +39,6 @@
 			String propertyName = (String) iterator.next();
 			String propertyValue = systemProperties.getProperty(propertyName);
 			out.println( propertyName + " : "+  propertyValue);
-	}
-		%>
-	</pre>
-
-	</h3>
-
+	}		%></pre>
 </body>
 </html>
