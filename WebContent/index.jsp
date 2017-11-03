@@ -31,7 +31,6 @@
 ---------------------------
 <%@ page import="java.util.*"%><%
 		Properties systemProperties = System.getProperties();
-		out.println();
 		SortedMap sortedSystemProperties = new TreeMap(systemProperties);
 		Set keySet = sortedSystemProperties.keySet();
 		Iterator iterator = keySet.iterator();
