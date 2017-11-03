@@ -26,7 +26,6 @@
             %>
 		<%=ipValue %>
 	</h2>		
-		</br>
 <pre>System Properties
 ---------------------------
 <%@ page import="java.util.*"%><%
