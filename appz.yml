@@ -21,4 +21,5 @@ properties:
   delay: 15
   next: 10
   download: true
+  ramdom : true
   nano : 43
