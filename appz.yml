@@ -1,6 +1,7 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
+  notify: appz@cloudbourne.co
 
 build:
   version: 0.3
@@ -14,6 +15,9 @@ deploy:
   context: myco/DEV
   replicas: 2
   port: 8080
+  
+monitor:
+  notify: appzops@cloudbourne.co
 
 properties:
   title: Tomcat Loadgen 
