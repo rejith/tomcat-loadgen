@@ -158,7 +158,7 @@ public class HelloWorldServlet extends HttpServlet {
             int randomSleepTime = random.nextInt((int) maxSleepTime);
             service = Executors.newScheduledThreadPool(num_threads);
 			AsyncWebService srvc = new AsyncWebService();
-			service.scheduleAtFixedRate(srvc,randomSleepTime,randomSleepTime,TimeUnit.SECONDS);
+			service.scheduleAtFixedRate(srvc,randomSleepTime,delay,TimeUnit.SECONDS);
         }
 		}else
 		{
