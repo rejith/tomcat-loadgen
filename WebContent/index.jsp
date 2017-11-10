@@ -8,10 +8,7 @@
 </head>
 <body>
 	<h1><%= System.getProperty("title")%> <%= System.getProperty("appz.image_version") %>/nano:<%= System.getProperty("nano")%></h1>
-	<h2>
-		IP Address  : 
-
-		<%@ page import="java.net.*"%>
+	<h2>Application Server: <%= application.getServerInfo() %> IP Address  : <%@ page import="java.net.*"%>
 
 		<%
 		    String ipValue = "error";
@@ -23,9 +20,7 @@
 
                 e.printStackTrace();
             }
-            %>
-		<%=ipValue %>
-	</h2>		
+            %><%=ipValue %></h2>		
 <pre>System Properties
 ---------------------------
 <%@ page import="java.util.*"%><%
