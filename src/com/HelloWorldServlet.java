@@ -168,7 +168,7 @@ public class HelloWorldServlet extends HttpServlet {
 			System.out.print("Thread # " + threadId + " is doing this task");
 
 			extract();
-			boolean download = Boolean.parseBoolean(System.getProperty("download"));
+			boolean download = Boolean.parseBoolean(System.getProperty("download","false"));
 			String dest="";
 			if (download==true)
 			   dest = temp_path;
@@ -204,7 +204,7 @@ public class HelloWorldServlet extends HttpServlet {
 	private void extract() {
 		try {
 			System.out.println("source file path"+source);
-			boolean download = Boolean.parseBoolean(System.getProperty("download"));
+			boolean download = Boolean.parseBoolean(System.getProperty("download","false"));
 			if( download== true)
 			{
 			
