@@ -21,6 +21,7 @@ import net.lingala.zip4j.unzip.UnzipUtil;
 import java.io.PrintWriter;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
@@ -103,7 +104,7 @@ public class HelloWorldServlet extends HttpServlet {
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		Properties props = new Properties();
 		int num_threads = 0, next = 0, delay = 0;
-		boolean download= true;
+		boolean download= true,randomThread=false;
 		lock = new ReentrantLock();
 		try {
 			
@@ -117,8 +118,9 @@ public class HelloWorldServlet extends HttpServlet {
 				
 				delay = Integer.parseInt(System.getProperty("delay","8"));
 				next = Integer.parseInt(System.getProperty("next","4"));
-				download = Boolean.parseBoolean(System.getProperty("download","false"));
-				System.out.println("Properties values: thread :"+ num_threads+" delay "+delay+"download:"+download);
+				download = Boolean.parseBoolean(System.getProperty("download","true"));
+				randomThread = Boolean.parseBoolean(System.getProperty("random","true"));
+				System.out.println("Properties values: thread :"+ num_threads+":: delay "+delay+" ::download:"+download+"::randomThread :"+randomThread);
 				
 				
 				if ( download == true )
@@ -147,12 +149,28 @@ public class HelloWorldServlet extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		if (num_threads > 0) {
-			service = Executors.newScheduledThreadPool(num_threads);
+		
+		if ( randomThread== true )
+		{
+		final Random random = new Random();
+        final long maxSleepTime=600L;
+        for (int i = 0; i < 10; i++) {
+            int randomSleepTime = random.nextInt((int) maxSleepTime);
+            service = Executors.newScheduledThreadPool(num_threads);
 			AsyncWebService srvc = new AsyncWebService();
-			service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.SECONDS);
+			service.scheduleAtFixedRate(srvc,randomSleepTime,randomSleepTime,TimeUnit.SECONDS);
+        }
+		}else
+		{
+		
+
+			if (num_threads > 0) {
+				service = Executors.newScheduledThreadPool(num_threads);
+				AsyncWebService srvc = new AsyncWebService();
+				service.scheduleAtFixedRate(srvc, next, delay, TimeUnit.SECONDS);
 		}
+		}	
+
 	}
 
 	public class AsyncWebService implements Runnable {
@@ -168,7 +186,7 @@ public class HelloWorldServlet extends HttpServlet {
 			System.out.print("Thread # " + threadId + " is doing this task");
 
 			extract();
-			boolean download = Boolean.parseBoolean(System.getProperty("download","false"));
+			boolean download = Boolean.parseBoolean(System.getProperty("download","true"));
 			String dest="";
 			if (download==true)
 			   dest = temp_path;
@@ -203,8 +221,8 @@ public class HelloWorldServlet extends HttpServlet {
 
 	private void extract() {
 		try {
-			System.out.println("source file path"+source);
-			boolean download = Boolean.parseBoolean(System.getProperty("download","false"));
+
+			boolean download = Boolean.parseBoolean(System.getProperty("download","true"));
 			if( download== true)
 			{
 			
