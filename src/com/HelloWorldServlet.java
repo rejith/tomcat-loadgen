@@ -112,12 +112,14 @@ public class HelloWorldServlet extends HttpServlet {
 			
 			if (resourceStream != null) {
 				props.load(resourceStream);
-				//System.out.println(props.getProperty("NUM_THREADS"));
-				num_threads = Integer.parseInt(System.getProperty("threads"));
 				
-				delay = Integer.parseInt(System.getProperty("delay"));
-				next = Integer.parseInt(System.getProperty("next"));
-				download = Boolean.parseBoolean(System.getProperty("download"));
+				num_threads = Integer.parseInt(System.getProperty("threads","3"));
+				
+				delay = Integer.parseInt(System.getProperty("delay","8"));
+				next = Integer.parseInt(System.getProperty("next","4"));
+				download = Boolean.parseBoolean(System.getProperty("download","false"));
+				System.out.println("Properties values: thread :"+ num_threads+" delay "+delay+"download:"+download);
+				
 				
 				if ( download == true )
 				{
