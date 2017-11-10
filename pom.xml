@@ -42,18 +42,7 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
-					<webResources>
-						<resource>
-							<directory>configurations</directory>
-							<!-- override the destination directory for this resource -->
-							<targetPath>WEB-INF</targetPath>
-							<!-- enable filtering -->
-							<filtering>true</filtering>
-							<includes>
-								<exclude>**/properties</exclude>
-							</includes>
-						</resource>
-					</webResources>
+					
 				</configuration>
 			</plugin>
 
@@ -68,7 +57,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/src</outputDirectory>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
 							<encoding>UTF-8</encoding>
 							<resources>
 								<resource>
