@@ -57,7 +57,7 @@ public class HelloWorldServlet extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		threadFunc2();
+		threadFunc();
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class HelloWorldServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
-		response.setContentType2("text/html");
+		response.setContentType("text/html");
 		PrintWriter printWriter = response.getWriter();
 		printWriter.println("HelloWorld Testing Code");
 
