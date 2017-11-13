@@ -8,12 +8,12 @@ build:
   env: DEV
   build_file: build.xml
   output_files: output/*.war
-  image_template: websphere8
+  image_template: tomcat8
   image_name: myco/tomcat-loadgen
 
 deploy:
   context: myco/DEV
-  replicas: 4
+  replicas: 2
   port: 8080
   
 monitor:
