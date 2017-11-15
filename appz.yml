@@ -21,7 +21,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen 
-  threads: 2
+  threads: 3
   delay: 15
   next: 10
   download: true
