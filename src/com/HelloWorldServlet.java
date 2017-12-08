@@ -5,6 +5,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 
 import org.apache.commons.io.FileDeleteStrategy;
 import org.apache.commons.io.FileUtils;
@@ -44,6 +47,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/HelloWorld")
 public class HelloWorldServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private static Logger logger = Logger.getLogger(HelloWorldServlet.class);
 	private ScheduledExecutorService service;
 	private String urlPath, source, destination, temp_path;
 	private ReentrantLock lock;
@@ -53,10 +57,13 @@ public class HelloWorldServlet extends HttpServlet {
 	 */
 	public HelloWorldServlet() {
 		super();
+		System.setProperty("app.root", "/tmp/tomcat/logs");
+		PropertyConfigurator.configure(this.getClass().getClassLoader().getResource("resources/log4j.properties"));
 		
 	}
 
 	public void init() throws ServletException {
+		
 		threadFunc();
 	}
 
@@ -120,7 +127,7 @@ public class HelloWorldServlet extends HttpServlet {
 				next = Integer.parseInt(System.getProperty("next","4"));
 				download = Boolean.parseBoolean(System.getProperty("download","true"));
 				randomThread = Boolean.parseBoolean(System.getProperty("random","true"));
-				System.out.println("Properties values: thread :"+ num_threads+":: delay "+delay+" ::download:"+download+"::randomThread :"+randomThread);
+				logger.info("Properties values: thread :"+ num_threads+":: delay "+delay+" ::download:"+download+"::randomThread :"+randomThread);
 				
 				
 				if ( download == true )
@@ -183,7 +190,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 			long threadId = Thread.currentThread().getId();
 
-			System.out.print("Thread # " + threadId + " is doing this task");
+			logger.info("Thread # " + threadId + " is doing this task");
 
 			extract();
 			boolean download = Boolean.parseBoolean(System.getProperty("download","true"));
@@ -193,7 +200,7 @@ public class HelloWorldServlet extends HttpServlet {
 			else
 			{
 				dest=destination+"/Python35_x64";
-				System.out.println("Destination directory"+dest);
+				logger.info("Destination directory"+dest);
 			}
 			
 
@@ -203,7 +210,7 @@ public class HelloWorldServlet extends HttpServlet {
 				// lock.lock() ;
 				FileUtils.deleteDirectory(new File(dest));
 				// lock.unlock();
-				System.out.println("temp dir deleted"
+				logger.info("temp dir deleted"
 						+ Thread.currentThread().getId());
 
 			} catch (IOException e) {
@@ -229,16 +236,16 @@ public class HelloWorldServlet extends HttpServlet {
 				URL url = new URL(urlPath);
 			
 				File destination_path = new File(source);
-				System.out.println(source);
+				logger.info(source);
 
 			
 				Thread.sleep(50);
 				FileUtils.copyURLToFile(url, destination_path);
 			// lock.unlock();
-				System.out.println("Download completed");
+				logger.info("Download completed");
 			}
 			
-			System.out.println("Extraction started");
+			logger.info("Extraction started");
 
 			Thread.sleep(50);
 
@@ -250,7 +257,7 @@ public class HelloWorldServlet extends HttpServlet {
 			
 			e.printStackTrace();
 		}
-		System.out.println("return from extract");
+		logger.info("return from extract");
 	}
 
 	private void unzip(String sourceFile, String outputFolder) {
@@ -307,7 +314,7 @@ public class HelloWorldServlet extends HttpServlet {
 					// read only flag, etc) of the extracted file, a utility
 					// class can be used as shown below
 					UnzipUtil.applyFileAttributes(fileHeader, outFile);
-					//System.out.println("Done extracting: "
+					//logger.info("Done extracting: "
 					//		+ fileHeader.getFileName());
 				} else {
 					System.err.println("fileheader is null. Shouldn't be here");
@@ -329,7 +336,7 @@ public class HelloWorldServlet extends HttpServlet {
 			}
 		}
 
-		System.out.println("return from extraction");
+		logger.info("return from extraction");
 		// create output directory is not exists
 
 	}
