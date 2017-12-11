@@ -13,7 +13,7 @@ build:
 
 deploy:
   context: myco/DEV
-  replicas: 2
+  replicas: 4
   port: 8080
   
 monitor:
@@ -26,4 +26,4 @@ properties:
   next: 10
   download: true
   random : true
-  nano : 133
+  nano : 134
