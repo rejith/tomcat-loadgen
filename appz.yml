@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: build.xml
   output_files: output/*.war
-  image_template: weblogic12c
+  image_template: tomcat8
   image_name: myco/tomcat-loadgen
 
 deploy:
