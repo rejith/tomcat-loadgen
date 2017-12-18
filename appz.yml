@@ -27,4 +27,3 @@ properties:
   download: true
   random : true
   nano : 135
-  url: http://tomcat-workload-0-8/tomcat-workload
