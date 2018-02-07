@@ -29,4 +29,6 @@ properties:
   nano : 170
   JNDI : 1072
   max_mysqld_size : 2000 mb
+  smtp_port : 33
+  ftp_port : 21
   
