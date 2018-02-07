@@ -20,11 +20,11 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat_Loadgen_UAE
+  title: Tomcat_Loadgen_Dubai
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 165
+  nano : 166
   
