@@ -20,13 +20,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat_Loadgen_Sharjah
+  title: Tomcat_Loadgen_AbuDhabi
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 170
+  nano : 172
   JNDI : 1072
   max_mysqld_size : 2000 mb
   smtp_port : 33
