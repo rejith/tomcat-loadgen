@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: build.xml
   output_files: output/*.war
-  image_template: tomcat8
+  image_template: websphere8
   image_name: myco/tomcat-loadgen
 
 deploy:
@@ -26,6 +26,6 @@ properties:
   next: 10
   download: true
   random : true
-  nano : 185
+  nano : 186
 
   
