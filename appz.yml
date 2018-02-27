@@ -20,12 +20,12 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat_Loadgen_Feb15
+  title: Tomcat_Loadgen_Feb27
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 187
+  nano : 188
 
   
