@@ -13,7 +13,7 @@ build:
 
 deploy:
   context: myco/DEV
-  replicas: 2
+  replicas: 4
   port: 8080
   
 monitor:
