@@ -20,7 +20,7 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat_Loadgen_Technopark
+  title: Tomcat_Loadgen
   threads: 3
   delay: 15
   next: 10
