@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: build.xml
   output_files: output/*.war
-  image_template: websphere8
+  image_template: tomcat8
   image_name: myco/tomcat-loadgen
 
 deploy:
@@ -20,12 +20,12 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat_Loadgen_Sharjah
+  title: Tomcat_Loadgen_NBD
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 228
+  nano : 229
 
   
