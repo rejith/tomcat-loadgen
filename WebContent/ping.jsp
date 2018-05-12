@@ -16,5 +16,10 @@
 		am_pm = "PM";
     String CT = (hour < 10 ? "0" : "") + hour + ":" + (minute < 10 ? "0" : "") + minute + ":" + (second < 10 ? "0" : "")
 		    + second + " " + am_pm;
+    out.println("---------------------------------------------------");
     out.println(CT);
+    out.println(System.getProperty("title"));
+    out.println(System.getProperty("appz.image_version"));
+    out.println("nano: " + System.getProperty("nano"));
+    out.println("---------------------------------------------------");
 %>
