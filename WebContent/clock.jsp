@@ -2,15 +2,15 @@
 
 <html>
    <head>
-      <title>Auto Refresh Header Example</title>
+      <title><%= System.getProperty("title")%></title>
    </head>
    
    <body>
       <center>
-         <h2>Auto Refresh Header Example</h2>
+         <h2><%= System.getProperty("title")%></h2>
          <%
-            // Set refresh, autoload time as 5 seconds
-            response.setIntHeader("Refresh", 5);
+            // Set refresh, autoload time as 1 seconds
+            response.setIntHeader("Refresh", 1);
             
             // Get current time
             Calendar calendar = new GregorianCalendar();
@@ -25,7 +25,7 @@
             else
                am_pm = "PM";
             String CT = hour+":"+ minute +":"+ second +" "+ am_pm;
-            out.println("Crrent Time: " + CT + "\n");
+            out.println("<h1>" + CT + "</h1>");
          %>
       </center>
    
