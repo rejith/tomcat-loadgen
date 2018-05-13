@@ -8,15 +8,13 @@ build:
   env: DEV
   build_file: build.xml
   output_files: output/*.war
-  image_template: tomcat8
+  image_template: jboss12
   image_name: myco/tomcat-loadgen
 
 deploy:
   context: myco/DEV
   replicas: 2
   port: 8080
-  strategy : rolling
-  ready_seconds : 10 
   
 monitor:
   notify: appzops@cloudbourne.co
