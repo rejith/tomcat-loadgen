@@ -15,7 +15,7 @@ deploy:
   context: myco/DEV
   replicas: 2
   port: 8080
-  strategy: rolling
+  strategy: recreate
   
 monitor:
   notify: appzops@cloudbourne.co
