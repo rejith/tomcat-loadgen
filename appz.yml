@@ -15,6 +15,8 @@ deploy:
   context: myco/DEV
   replicas: 2
   port: 8080
+  strategy : rolling
+  ready_seconds : 10 
   
 monitor:
   notify: appzops@cloudbourne.co
@@ -26,6 +28,6 @@ properties:
   next: 10
   download: true
   random : true
-  nano : 265
+  nano : 266
 
   
