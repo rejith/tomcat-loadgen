@@ -15,18 +15,17 @@ deploy:
   context: myco/DEV
   replicas: 2
   port: 8080
-  strategy: rolling
   
 monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen
+  title: Tomcat Loadgen NeST
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 261
+  nano : 269
 
   
