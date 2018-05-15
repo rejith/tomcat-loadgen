@@ -33,8 +33,7 @@
     
     out.println("---------------------------------------------------");
     out.println(CT);
-    out.println(System.getProperty("title"));
-    out.println(System.getProperty("appz.image_version"));
+    out.println(System.getProperty("title") + " " + System.getProperty("appz.image_version"));
     out.println("nano: " + System.getProperty("nano"));
     out.println("IP: " + ipValue);
     out.println("---------------------------------------------------");
