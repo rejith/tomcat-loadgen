@@ -62,6 +62,7 @@
 				<include name="*/*.xml" />
 				<include name="**/*.jar" />
 				<include name="**/*.jsp" />
+				<include name="**/*.png" />
 
 			</fileset>
 			<zipfileset dir="." includes="src/**" prefix="WEB-INF"/>

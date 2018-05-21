@@ -169,7 +169,7 @@
             <div class="row">
 
                 <div>
-                    <center><img src="cloud_logo.png" alt="CLOUDBOURNE" class="responsive" width="90px" height="50"></center>
+                    <center><img src="images/cloud_logo.png" alt="CLOUDBOURNE" class="responsive" width="90px" height="50"></center>
                 </div>
             </div>
 
