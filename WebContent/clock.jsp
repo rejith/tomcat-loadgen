@@ -122,7 +122,7 @@
                             am_pm = "PM";
                         String CT = (hour < 10 ? "0" : "") + hour + ":" + (minute < 10 ? "0" : "") + minute + ":" +  (second < 10 ? "0" : "") + second + " " + am_pm;
                      %>
-                        <label for="time"><h1>TIME: <%=CT %></h1></label>
+                        <label for="time"><h1><%=CT %></h1></label>
                 </div>
 
                 <div class="column" style="height:100px">
