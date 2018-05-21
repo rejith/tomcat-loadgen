@@ -75,8 +75,6 @@
 
     </head>
     <body>
-    	<div style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    	
             <div class="row">
                 <div>
                     <h1 style="color:#DAA520;"><center>APP-Z DEMO</center></h1>
@@ -124,7 +122,7 @@
                             am_pm = "PM";
                         String CT = (hour < 10 ? "0" : "") + hour + ":" + (minute < 10 ? "0" : "") + minute + ":" +  (second < 10 ? "0" : "") + second + " " + am_pm;
                      %>
-                        <label for="time"><h1><%=CT %></h1></label>
+                        <label for="time"><h1>TIME: <%=CT %></h1></label>
                 </div>
 
                 <div class="column" style="height:100px">
@@ -174,6 +172,6 @@
                     <center><img src="images/logo.png" alt="CLOUDBOURNE" class="responsive" width="90px" style="margin:10px"></center>
                 </div>
             </div>
-		</div>
+
     </body>
 </html>
