@@ -4,7 +4,7 @@
 	<groupId>com.tomcat-loadgen</groupId>
 	<artifactId>tomcat-loadgen</artifactId>
 	<packaging>war</packaging>
-	<version>0.3.41</version>
+	<version>${project.version}</version>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
