@@ -80,7 +80,7 @@
 				<version>3.0.0</version>
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
-					<outputDirectory>${project.build.directory}/output</outputDirectory>
+					<outputDirectory>${project.basedir}/output</outputDirectory>
 				</configuration>
 			</plugin>
 
