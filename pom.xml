@@ -35,7 +35,7 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-			<systemPath>${basedir}/WebContent/WEB-INF/lib/log4j-1.2.17.jar</systemPath>
+			<systemPath>WebContent/WEB-INF/lib/log4j-1.2.17.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>
