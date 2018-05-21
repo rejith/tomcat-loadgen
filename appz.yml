@@ -6,7 +6,7 @@ app:
 build:
   version: 0.3
   env: DEV
-  build_file: build.xml
+  build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat8
   image_name: myco/tomcat-loadgen
@@ -27,6 +27,6 @@ properties:
   next: 10
   download: true
   random : true
-  nano : 271
+  nano : 272
 
   
