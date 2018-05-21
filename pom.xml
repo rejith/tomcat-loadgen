@@ -79,10 +79,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.0.0</version>
 				<configuration>
-
-
 					<warSourceDirectory>WebContent</warSourceDirectory>
-
+					<outputDirectory>${project.build.directory}/output</outputDirectory>
 				</configuration>
 			</plugin>
 
