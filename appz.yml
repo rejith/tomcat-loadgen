@@ -22,12 +22,12 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen NeST
+  title: Tomcat Loadgen San R
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 277
+  nano : 278
 
   
