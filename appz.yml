@@ -23,7 +23,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen SJ
-  head_color : blue
+  head_color : red
   threads: 3
   delay: 15
   next: 10
