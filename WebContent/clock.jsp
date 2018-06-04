@@ -47,7 +47,7 @@
           }
 
           .column-50-blue {
-              background-color:#3377e0;
+              background-color:blue;
               float: left;
               width: 50%;
               padding: 10px;
