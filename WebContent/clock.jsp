@@ -30,7 +30,7 @@
           }
 
           .column-mid-white {
-              background-color:red;
+              background-color:<%=System.getProperty("head_color")%>;
               color: white;
               float: left;
               width: 25%;
