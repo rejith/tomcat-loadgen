@@ -30,7 +30,7 @@
           }
 
           .column-mid-white {
-              background-color:#3377ff;
+              background-color:red;
               color: white;
               float: left;
               width: 25%;
