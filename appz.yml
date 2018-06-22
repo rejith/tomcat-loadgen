@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Boston
+  title: Tomcat Loadgen LEX
   head_color : red
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 293
+  nano : 294
 
   
