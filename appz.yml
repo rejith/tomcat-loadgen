@@ -22,7 +22,7 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen ALM
+  title: Tomcat Loadgen
   head_color : red
   threads: 3
   delay: 15
