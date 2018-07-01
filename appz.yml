@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen ALM
+  title: Tomcat Loadgen Walpole
   head_color : red
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 297
+  nano : 300
 
   
