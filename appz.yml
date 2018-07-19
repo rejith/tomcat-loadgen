@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Las Vegas
+  title: Tomcat Loadgen Kochi
   head_color : red
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 303
+  nano : 304
 
   
