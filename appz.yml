@@ -15,7 +15,7 @@ deploy:
   context: myco/DEV
   replicas: 4
   port: 8080
-  strategy : rolling
+  strategy : recreate
   ready_seconds : 10
   
 monitor:
