@@ -23,12 +23,12 @@ monitor:
 
 properties:
   title: Tomcat Loadgen SmithField
-  head_color : red
+  head_color : green
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 324
+  nano : 325
 
   
