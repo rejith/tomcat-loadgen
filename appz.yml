@@ -15,7 +15,7 @@ deploy:
   context: myco/DEV
   replicas: 4
   port: 8080
-  strategy : recreate
+  strategy : rolling
   ready_seconds : 10
   
 monitor:
@@ -29,6 +29,6 @@ properties:
   next: 10
   download: true
   random : true
-  nano : 322
+  nano : 324
 
   
