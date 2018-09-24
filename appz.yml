@@ -22,7 +22,7 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen SFO
+  title: Tomcat Loadgen LAX
   head_color : green
   threads: 3
   delay: 15
