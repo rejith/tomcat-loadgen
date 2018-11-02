@@ -13,7 +13,7 @@ build:
 
 deploy:
   context: myco/DEV
-  replicas: 20
+  replicas: 4
   port: 8080
   strategy : rolling
   ready_seconds : 10
