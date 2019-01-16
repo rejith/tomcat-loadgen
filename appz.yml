@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Norwood
+  title: Tomcat Loadgen Walpole
   head_color : green
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 362
+  nano : 363
 
   
