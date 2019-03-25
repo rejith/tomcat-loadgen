@@ -22,8 +22,8 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen BOSTON
-  head_color : Green
+  title: Tomcat Loadgen Lynn
+  head_color : Brown
   threads: 3
   delay: 15
   next: 10
