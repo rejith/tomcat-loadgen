@@ -23,7 +23,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen Lynn
-  head_color : Brown
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
