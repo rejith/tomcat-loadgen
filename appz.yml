@@ -16,19 +16,19 @@ deploy:
   replicas: 4
   port: 8080
   strategy : rolling
-  ready_seconds : 30
+  ready_seconds : 20
   
 monitor:
   notify: appzops@cloudbourne.co
 
 properties:
   title: Tomcat Loadgen BOSTON
-  head_color : RoyalBlue
+  head_color : Green
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 408
+  nano : 409
 
   
