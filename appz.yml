@@ -23,12 +23,12 @@ monitor:
 
 properties:
   title: Tomcat Loadgen Walpole
-  head_color : Green
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 419
+  nano : 420
 
   
