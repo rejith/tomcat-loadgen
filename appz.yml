@@ -22,8 +22,8 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen XYZ
-  head_color : RoyalBlue
+  title: Tomcat Loadgen TRV
+  head_color : Green
   threads: 3
   delay: 15
   next: 10
