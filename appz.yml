@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen NYC
-  head_color : Green
+  title: Tomcat Loadgen Boston
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 440
+  nano : 441
 
   
