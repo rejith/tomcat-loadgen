@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: pom.xml
   output_files: output/*.war
-  image_template: tomcat8
+  image_template: tomcat8-v2
   image_name: myco/tomcat-loadgen
 
 deploy:
