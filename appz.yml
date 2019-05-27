@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Oman
-  head_color : Green
+  title: Tomcat Loadgen Amsterdam
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 460
+  nano : 461
 
   
