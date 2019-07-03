@@ -23,7 +23,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen Zoom
-  head_color : RolyalBlue
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
