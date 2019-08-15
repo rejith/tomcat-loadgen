@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen WebEx
-  head_color : Green
+  title: Tomcat Loadgen Thur
+  head_color : RoyalBlue
   threads: 3
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 493
+  nano : 494
 
   
