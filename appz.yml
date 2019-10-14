@@ -1,7 +1,7 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
-  notify: krishnan.rejith@gmail.com
+  notify: appz@cloudbourne.co
 
 build:
   version: 0.3
