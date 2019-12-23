@@ -191,6 +191,5 @@
                     <center><img src="cloud_logo.png" alt="CLOUDBOURNE" class="responsive" width="90px" height="50"></center>
                 </div>
             </div>
-
     </body>
 </html>
