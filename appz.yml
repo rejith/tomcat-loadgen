@@ -24,7 +24,7 @@ monitor:
 properties:
   title: Tomcat Loadgen WebEx
   head_color : Green
-  threads: 3
+  threads: 8
   delay: 15
   next: 10
   download: true
