@@ -24,11 +24,11 @@ monitor:
 properties:
   title: Tomcat Loadgen WebEx
   head_color : RoyalBlue
-  threads: 8
+  threads: 1
   delay: 15
   next: 10
   download: true
   random : true
-  nano : 70
+  nano : 71
 
   
