@@ -13,7 +13,7 @@ build:
 
 deploy:
   context: myco/DEV
-  replicas: 4
+  replicas: 2
   port: 8080
   strategy : rolling
   ready_seconds : 30
@@ -25,8 +25,8 @@ properties:
   title: Tomcat Loadgen Oman over Zoom
   head_color : RoyalBlue
   threads: 1
-  delay: 15
-  next: 10
+  delay: 60
+  next: 60
   download: true
   random : true
   nano : 76
