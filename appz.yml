@@ -23,7 +23,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen Oman over Zoom
-  head_color : Green
+  head_color : Blue
   threads: 1
   delay: 60
   next: 60
