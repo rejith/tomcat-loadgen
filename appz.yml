@@ -22,8 +22,8 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Oman over Zoom
-  head_color : Blue
+  title: Tomcat Loadgen Installer Testing
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
