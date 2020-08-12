@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen Installer Testing
+  title: Tomcat Loadgen Zoom
   head_color : Blue
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 88
+  nano : 89
 
   
