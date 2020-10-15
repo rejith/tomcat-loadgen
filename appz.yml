@@ -22,13 +22,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen OSPYN
+  title: Tomcat Loadgen EY
   head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 102
+  nano : 103
 
   
