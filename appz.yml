@@ -23,12 +23,12 @@ monitor:
 
 properties:
   title: Tomcat Loadgen EY
-  head_color : RoyalBlue
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 105
+  nano : 106
 
   
