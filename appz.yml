@@ -9,7 +9,6 @@ build:
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
-  image_name: myco/tomcat-loadgen
 
 deploy:
   context: myco/DEV
