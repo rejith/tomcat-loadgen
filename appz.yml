@@ -16,7 +16,7 @@ deploy:
   port: 8080
   strategy : rolling
   ready_seconds : 30
-  
+
 monitor:
   notify: appzops@cloudbourne.co
 
@@ -28,6 +28,6 @@ properties:
   next: 60
   download: true
   random : true
-  nano : 132
+  nano : 133
 
-  
+
