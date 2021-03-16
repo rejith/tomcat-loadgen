@@ -22,7 +22,7 @@ monitor:
 
 properties:
   title: Tomcat Loadgen - Demo with Marc over Zoom
-  head_color : RoyalBlue
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
