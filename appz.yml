@@ -21,7 +21,7 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen - demo over Zoom on Wed
+  title: Tomcat Loadgen - Demo with Marc over Zoom
   head_color : RoyalBlue
   threads: 1
   delay: 60
