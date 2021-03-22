@@ -21,13 +21,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen - Demo with NN
-  head_color : RoyalBlue
+  title: Tomcat Loadgen - Demo with Murali
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 157
+  nano : 158
 
 
