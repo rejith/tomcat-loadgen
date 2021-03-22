@@ -21,13 +21,13 @@ monitor:
   notify: appzops@cloudbourne.co
 
 properties:
-  title: Tomcat Loadgen - Demo with Jordan over Zoom
-  head_color : Green
+  title: Tomcat Loadgen - Demo with NN
+  head_color : RoyalBlue
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 154
+  nano : 155
 
 
