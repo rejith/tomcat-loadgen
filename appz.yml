@@ -17,9 +17,6 @@ deploy:
   strategy : rolling
   ready_seconds : 30
 
-monitor:
-  notify: appzops@cloudbourne.co
-
 properties:
   title: Tomcat Loadgen - Demo with Murali
   head_color : Green
