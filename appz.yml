@@ -18,13 +18,13 @@ deploy:
   ready_seconds : 30
 
 properties:
-  title: Tomcat Loadgen - Demo with Murali
-  head_color : Green
+  title: Tomcat Loadgen - Demo with Dev
+  head_color : RoyalBlue
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 160
+  nano : 161
 
 
