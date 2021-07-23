@@ -11,7 +11,7 @@ build:
   image_template: tomcat9
 
 deploy:
-  context: rejith/DEV
+  context: myco/DEV
   replicas: 2
   port: 8080
   strategy : rolling
