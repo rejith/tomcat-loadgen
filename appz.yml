@@ -11,7 +11,7 @@ build:
   image_template: tomcat9
 
 deploy:
-  context: myco/DEV
+  context: rejith/DEV
   replicas: 2
   port: 8080
   strategy : rolling
@@ -25,6 +25,6 @@ properties:
   next: 60
   download: true
   random : true
-  nano : 227
+  nano : 228
 
 
