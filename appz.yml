@@ -15,7 +15,7 @@ deploy:
   replicas: 2
   port: 8080
   strategy : rolling
-  ready_seconds : 45
+  ready_seconds : 60
 
 properties:
   title: Tomcat Loadgen - Demo over Zoom
