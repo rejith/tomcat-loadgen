@@ -18,7 +18,7 @@ deploy:
   ready_seconds : 45
 
 properties:
-  title: Tomcat Loadgen - Demo over Teams
+  title: Tomcat Loadgen - Hello World
   head_color : Green
   threads: 1
   delay: 60
