@@ -18,13 +18,13 @@ deploy:
   ready_seconds : 45
 
 properties:
-  title: Tomcat Loadgen - Demo in Dubai
-  head_color : RoyalBlue
+  title: Tomcat Loadgen - Demo over Zoom
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 301
+  nano : 302
 
 
