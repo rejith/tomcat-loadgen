@@ -18,13 +18,13 @@ deploy:
   ready_seconds : 45
 
 properties:
-  title: Tomcat Loadgen - Demo over Zoom to Canada
-  head_color : Royalblue
+  title: Tomcat Loadgen - Demo over Zoom to HYD
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 309
+  nano : 310
 
 
