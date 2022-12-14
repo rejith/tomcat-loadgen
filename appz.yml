@@ -19,12 +19,12 @@ deploy:
 
 properties:
   title: Tomcat Loadgen - Demo over Teams on Wed Afternoon
-  head_color : RoyalBlue
+  head_color : Green
   threads: 1
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 393
+  nano : 394
 
 
