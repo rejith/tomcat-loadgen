@@ -18,13 +18,13 @@ deploy:
   ready_seconds : 45
 
 properties:
-  title: Tomcat Loadgen - Demo over LinkedIn
-  head_color : RoyalBlue
+  title: Tomcat Loadgen - Demo in NL
+  head_color : Green
   threads: 0
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 403
+  nano : 404
 
 
