@@ -18,13 +18,13 @@ deploy:
   ready_seconds : 45
 
 properties:
-  title: Tomcat Loadgen - Demo over Zoom on Thur
-  head_color : Green
+  title: Tomcat Loadgen - Demo over Zoom on Wed
+  head_color : RoyalBlue
   threads: 0
   delay: 60
   next: 60
   download: true
   random : true
-  nano : 427
+  nano : 428
 
 
