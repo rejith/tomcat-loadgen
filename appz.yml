@@ -23,8 +23,8 @@ properties:
   threads: 0
   delay: 60
   next: 60
-  download: true
-  random : true
-  nano : 430
+  download: false
+  random : false
+  nano : 431
 
 
