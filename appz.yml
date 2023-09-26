@@ -19,12 +19,12 @@ deploy:
 
 properties:
   title: Tomcat Loadgen - Demo over GM on Thur
-  head_color : Red
+  head_color : Green
   threads: 0
   delay: 60
   next: 60
   download: false
   random : false
-  nano : 446
+  nano : 447
 
 
