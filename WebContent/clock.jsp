@@ -166,12 +166,5 @@
                 </div>
             </div>
 
-            <div class="row">
-
-                <div>
-                    <center><img src="images/logo_v1.png" alt="CLOUDBOURNE" class="responsive" width="90px" style="margin:10px"></center>
-                </div>
-            </div>
-
     </body>
 </html>
