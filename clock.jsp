@@ -90,7 +90,7 @@
     <body  onload="load()"">
             <div class="row">
                 <div>
-                    <h1 style="color:#DAA520;"><center>APP-Z DEMO</center></h1>
+                    <h1 style="color:#DAA520;"><center>Cloud Orbit DEMO</center></h1>
                     <p><center>Fully Automated Hybrid Cloud Platform</center></p>
                 </div>
             </div>
