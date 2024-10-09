@@ -77,7 +77,7 @@
     <body>
             <div class="row">
                 <div>
-                    <h1 style="color:#DAA520;"><center>CloudConrol Demo</center></h1>
+                    <h1 style="color:#DAA520;"><center>CloudControl Demo</center></h1>
                     <h2><center>Fully Automated Multi-Cloud Management Platform</center></h2>
                 </div>
             </div>
